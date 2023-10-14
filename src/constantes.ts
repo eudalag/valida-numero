@@ -1,3 +1,3 @@
 //export const positiveNumberRegex = /^([0-9]+\.?[0-9]*)?$/;
-//export const positiveNumberRegex = /^\d*\.?\d+$/;
-export const positiveNumberRegex = /^\d+$/;
+export const positiveNumberRegex = /^\d*\.?\d+$/;
+//export const positiveNumberRegex = /^\d+$/;
