@@ -1,1 +1,1 @@
-export const positiveNumberRegex = /^\d(\d+\.?\d*)?$/;
+export const positiveNumberRegex = /^\d*\.?\d{0,5}$/;
