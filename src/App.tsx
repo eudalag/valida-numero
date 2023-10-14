@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { positiveNumberRegex } from './constantes';
 
 function App() {
   const [inputValue, setInputValue] = useState('');
   const handleChangeDemandLimit = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { value } = event.target as HTMLInputElement;
     // Expresión regular para aceptar números enteros o decimales
-    if (/^[+]?\d*\.?\d+$/.test(value)) {
+    if (positiveNumberRegex.test(value)) {
       setInputValue(value);
       console.log("permite");
     } else {
